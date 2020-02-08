@@ -1,6 +1,46 @@
 <?php
 
       $data = array(
+        'ultra-lite' => array(
+          'categories'        => array( 'Ultra Lite' ),
+          'preview_url' => 'https://demo.wpoperation.com/ultraseven/ultra-lite/',
+          'xml_file'        => 'content.xml',
+          'theme_settings'  => 'options.dat',
+          'widgets_file'    => 'widgets.wie',
+          'home_title'      => 'Home',
+          'blog_title'      => 'Blog',
+          'posts_to_show'   => '5',
+          'is_shop' => true,
+          'menus'         => array(
+              'main-menu' => 'Main Menu',
+              'top-menu' => 'Top Menu',
+              'footer-menu' => 'Footer Menu'
+          ),
+          'required_plugins'  => array(
+            'free' => array(
+              array(
+                'slug'    => 'ultra-companion',
+                'init'    => 'ultra-companion/ultra-companion.php',
+                'name'    => 'Ultra Companion',
+              ),
+              array(
+                'slug'    => 'elementor',
+                'init'    => 'elementor/elementor.php',
+                'name'    => 'Elementor',
+              ),
+              array(
+                'slug'    => 'wpop-elementor-addons',
+                'init'    => 'wpop-elementor-addons/wpop-elementor-addons.php',
+                'name'    => 'WPOP Elementor Addons',
+              ),
+              array(
+                'slug'    => 'woocommerce',
+                'init'    => 'woocommerce/woocommerce.php',
+                'name'    => 'WooCommerce',
+              ),
+            ),
+          ),
+        ),
         'lifestyle' => array(
           'categories'        => array( 'Lifestyle' ),
           'preview_url' => 'https://demo.wpoperation.com/ultraseven/lifestyle/',
